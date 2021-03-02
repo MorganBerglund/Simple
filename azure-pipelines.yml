@@ -28,8 +28,8 @@ steps:
    command: publish
    publishWebProjects: false
    projects: 'src/Simple/Simple.csproj'
-   arguments: '-configuration $(buildconfiguration) --output $(Build.ArtifactStagingDirectory)'
+   arguments: '--configuration $(buildconfiguration) --output $(Build.ArtifactStagingDirectory)'
    zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
-  displayName: 'publish artifacts'
+ displayName: 'publish artifacts'
